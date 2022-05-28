@@ -1,0 +1,726 @@
+[
+    {
+        "id": "dfbfa1173d0603bd",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "9d4ae79b2f0a3f3a",
+        "type": "ui_tab",
+        "name": "HomeMonitor",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "8579cac5b255d514",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "05e7ece97b0c788b",
+        "type": "ui_group",
+        "name": "Sensor1",
+        "tab": "9d4ae79b2f0a3f3a",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1fbe7fb099c4a34d",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.68.151",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "ba3913e457b4da7e",
+        "type": "ui_group",
+        "name": "Sensor2",
+        "tab": "9d4ae79b2f0a3f3a",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "133c040d7f7bc143",
+        "type": "ui_group",
+        "name": "Sensor3",
+        "tab": "9d4ae79b2f0a3f3a",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c1ab2202c683a803",
+        "type": "ui_group",
+        "name": "Sensor4",
+        "tab": "9d4ae79b2f0a3f3a",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8785cd95bbdaa4d9",
+        "type": "ui_group",
+        "name": "Sensor5",
+        "tab": "9d4ae79b2f0a3f3a",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "369bd2e48916d44f",
+        "type": "ui_group",
+        "name": "Sensor6",
+        "tab": "9d4ae79b2f0a3f3a",
+        "order": 6,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "bd77f62ecdc9aa6f",
+        "type": "ui_template",
+        "z": "dfbfa1173d0603bd",
+        "group": "05e7ece97b0c788b",
+        "name": "Monitor",
+        "order": 0,
+        "width": "0",
+        "height": "0",
+        "format": "",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 120,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "66c572ba096ded6a",
+        "type": "ui_chart",
+        "z": "dfbfa1173d0603bd",
+        "name": "Monitor",
+        "group": "05e7ece97b0c788b",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "label": "Temp",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "Test",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "10",
+        "removeOlderPoints": "1000",
+        "removeOlderUnit": "1",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": true,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 320,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e5f735c2d9978aaf",
+        "type": "mqtt in",
+        "z": "dfbfa1173d0603bd",
+        "name": "",
+        "topic": "esp32/sensor",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "1fbe7fb099c4a34d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 320,
+        "wires": [
+            [
+                "66c572ba096ded6a",
+                "8d074ebbedf77cc8"
+            ]
+        ]
+    },
+    {
+        "id": "8d074ebbedf77cc8",
+        "type": "ui_text",
+        "z": "dfbfa1173d0603bd",
+        "group": "05e7ece97b0c788b",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Temp",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 310,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "f4595571d767440a",
+        "type": "ui_chart",
+        "z": "dfbfa1173d0603bd",
+        "name": "Monitor",
+        "group": "ba3913e457b4da7e",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "label": "Temp",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "Test",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "10",
+        "removeOlderPoints": "1000",
+        "removeOlderUnit": "1",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": true,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 320,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8de301ee24fc4246",
+        "type": "mqtt in",
+        "z": "dfbfa1173d0603bd",
+        "name": "",
+        "topic": "esp32/sensor2",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "1fbe7fb099c4a34d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 140,
+        "y": 420,
+        "wires": [
+            [
+                "f4595571d767440a",
+                "095ec589963aeca9"
+            ]
+        ]
+    },
+    {
+        "id": "095ec589963aeca9",
+        "type": "ui_text",
+        "z": "dfbfa1173d0603bd",
+        "group": "ba3913e457b4da7e",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Temp",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 310,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "cc16f1c1a7035a24",
+        "type": "ui_chart",
+        "z": "dfbfa1173d0603bd",
+        "name": "Monitor",
+        "group": "133c040d7f7bc143",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "label": "Temp",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "Test",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "10",
+        "removeOlderPoints": "1000",
+        "removeOlderUnit": "1",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": true,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 320,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b3e4e02cedbf5778",
+        "type": "mqtt in",
+        "z": "dfbfa1173d0603bd",
+        "name": "",
+        "topic": "esp32/sensor3",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "1fbe7fb099c4a34d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 140,
+        "y": 520,
+        "wires": [
+            [
+                "cc16f1c1a7035a24",
+                "72911a3dd0919327"
+            ]
+        ]
+    },
+    {
+        "id": "72911a3dd0919327",
+        "type": "ui_text",
+        "z": "dfbfa1173d0603bd",
+        "group": "133c040d7f7bc143",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Temp",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 310,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "ec5b5a6b9982d390",
+        "type": "ui_chart",
+        "z": "dfbfa1173d0603bd",
+        "name": "Monitor",
+        "group": "c1ab2202c683a803",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "label": "Temp",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "Test",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "10",
+        "removeOlderPoints": "1000",
+        "removeOlderUnit": "1",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": true,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 320,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "31d9243f56982f5e",
+        "type": "mqtt in",
+        "z": "dfbfa1173d0603bd",
+        "name": "",
+        "topic": "esp32/sensor4",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "1fbe7fb099c4a34d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 140,
+        "y": 600,
+        "wires": [
+            [
+                "ec5b5a6b9982d390",
+                "f9c41fca9e5d3943"
+            ]
+        ]
+    },
+    {
+        "id": "f9c41fca9e5d3943",
+        "type": "ui_text",
+        "z": "dfbfa1173d0603bd",
+        "group": "c1ab2202c683a803",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Temp",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 310,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "14ca15ae207002d2",
+        "type": "ui_chart",
+        "z": "dfbfa1173d0603bd",
+        "name": "Monitor",
+        "group": "8785cd95bbdaa4d9",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "label": "Temp",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "Test",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "10",
+        "removeOlderPoints": "1000",
+        "removeOlderUnit": "1",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": true,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 320,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "10c7f1edf72dad3c",
+        "type": "mqtt in",
+        "z": "dfbfa1173d0603bd",
+        "name": "",
+        "topic": "esp32/sensor5",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "1fbe7fb099c4a34d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 140,
+        "y": 700,
+        "wires": [
+            [
+                "14ca15ae207002d2",
+                "258cfef226eb78a1"
+            ]
+        ]
+    },
+    {
+        "id": "258cfef226eb78a1",
+        "type": "ui_text",
+        "z": "dfbfa1173d0603bd",
+        "group": "8785cd95bbdaa4d9",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Temp",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 310,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "69f54ede0adbb825",
+        "type": "ui_chart",
+        "z": "dfbfa1173d0603bd",
+        "name": "Monitor",
+        "group": "369bd2e48916d44f",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "label": "Temp",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "Test",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "10",
+        "removeOlderPoints": "1000",
+        "removeOlderUnit": "1",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": true,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 320,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2c6918544d1e42b3",
+        "type": "mqtt in",
+        "z": "dfbfa1173d0603bd",
+        "name": "",
+        "topic": "esp32/sensor6",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "1fbe7fb099c4a34d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 140,
+        "y": 780,
+        "wires": [
+            [
+                "69f54ede0adbb825",
+                "a4b4609b0c81a093"
+            ]
+        ]
+    },
+    {
+        "id": "a4b4609b0c81a093",
+        "type": "ui_text",
+        "z": "dfbfa1173d0603bd",
+        "group": "369bd2e48916d44f",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Temp",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 310,
+        "y": 820,
+        "wires": []
+    }
+]
