@@ -27,12 +27,12 @@ humi = 0
 @app.route('/humi', methods=['GET'])
 def get_data_humi():
     # Simulate a data response
-    return jsonify({"temp": str(temp)})
+    return jsonify({"humi": str(humi)})
 
 @app.route('/temp', methods=['GET'])
 def get_data_temp():
     # Simulate a data response
-    return jsonify({"humi":str(humi)})
+    return jsonify({"temp":str(temp)})
   
 # Callback when a message is received
 def on_message(client, userdata, msg):
