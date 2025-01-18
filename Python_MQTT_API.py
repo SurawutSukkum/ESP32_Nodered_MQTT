@@ -14,7 +14,7 @@ app = Flask(__name__)
 CORS(app)  # This will allow your React app to connect to this Flask API
 
 # MQTT broker details
-broker = "broker.hivemq.com"
+broker = "mqtt.eclipseprojects.io"
 
 port = 1883
 publish_topic = "python/testTar"
