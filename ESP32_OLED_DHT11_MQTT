@@ -28,8 +28,9 @@ const char* password = "0884118773";
 const char* mqtt_server = "broker.hivemq.com";
 const int mqtt_port = 1883;
 const char* publish_topic = "test/topicTar";
+const char* publish_topic_temp = "test/topicTar/temp";
+const char* publish_topic_humi = "test/topicTar/humi";
 const char* subscribe_topic = "python/testTar";
-
 // Wi-Fi and MQTT clients
 WiFiClient espClient;
 PubSubClient client(espClient);
@@ -77,6 +78,18 @@ void setup() {
   Serial.begin(115200);
   display.begin(i2c_Address, true); // Address 0x3C default
   display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(SH110X_WHITE);
+  display.setCursor(0, 0);
+  display.println("Day2 learn ESP32");
+  display.setCursor(0, 10);
+  display.println("Setup WIFI");
+  display.setCursor(0, 30);
+  display.println("ssid is TESTESP");
+  display.setCursor(0, 40);  
+  display.println("Pass is 0884118773");
+  display.display();
+
   delay(2000);
 
   dht.begin();
@@ -94,14 +107,16 @@ void loop() {
 
   // Example of publishing a message
   static unsigned long lastTime = 0;
-  if (millis() - lastTime > 5000) {
+  if (millis() - lastTime > 1000) {
     lastTime = millis();
  
     int temp = dht.readTemperature();
     int humi = dht.readHumidity(); 
     
-    String message = "Hello from ESP32! Temp is" + String(temp)+ " *c Humi is " + String(humi)+ " %";
+    String message = "Hello from ESP32! Temp is " + String(temp)+ " *c Humi is " + String(humi)+ " %";
     client.publish(publish_topic, message.c_str());
+    client.publish(publish_topic_temp,String(temp).c_str());
+    client.publish(publish_topic_humi, String(humi).c_str());
     Serial.println("Message published.");
          
     display.setTextSize(1);
