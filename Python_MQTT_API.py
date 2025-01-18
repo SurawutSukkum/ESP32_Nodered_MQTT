@@ -24,6 +24,12 @@ subscribe_topic_humi = "test/topicTar/humi"
 temp = 0 
 humi = 0
     
+
+@app.route('/all', methods=['GET'])
+def get_data_all():
+    # Simulate a data response
+    return jsonify({"temp":str(temp)},{"humi": str(humi)})
+
 @app.route('/humi', methods=['GET'])
 def get_data_humi():
     # Simulate a data response
