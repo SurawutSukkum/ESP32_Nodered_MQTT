@@ -1,12 +1,16 @@
 # ESP32_Nodered_MQTT
 
+Recommend in Vscode
+
 git clone https://github.com/SurawutSukkum/ESP32_Nodered_MQTT
+
+$ pip install -r requirements.txt
 
 ![alt text](https://github.com/SurawutSukkum/ESP32_Nodered_MQTT/blob/main/Screenshot%20from%202022-05-28%2022-21-39.png?raw=true)
 
 ESP32 send data to noedred via MQTT
 
-Install Nodered
+Install Nodered in Ubuntu
 
 $ sudo apt-get updat
 
