@@ -56,10 +56,15 @@ git clone https://github.com/SurawutSukkum/ESP32_Nodered_MQTT
 
 # Install React FrontEnd
 npx create-react-app my-app
+
 cd my-app
+
 npm install react-scripts@latest
+
 npm install react-scripts --save
+
 npm start
+
 
 ![alt text](https://github.com/SurawutSukkum/ESP32_Nodered_MQTT/blob/main/web.JPG?raw=true)
  
